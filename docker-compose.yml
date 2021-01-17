@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  mead-mongo:
+    image: mongo:4.2.5
+    ports:
+      - 27017:27017
+    volumes:
+      - /var/lib/docker/volumes/mead/_data:/data/db
