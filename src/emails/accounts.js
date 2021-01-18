@@ -8,13 +8,7 @@ const sendWelcomeEmail = (email, name) => {
     from: 'gmunker@vitalityhandmade.com',
     subject: 'Thanks joining in!',
     text: `Welcome to the app ${name}, let me know how you like it.`
-  }).then(() => { }, error => {
-    console.error(error);
-
-    if (error.response) {
-      console.error(error.response.body)
-    }
-  });
+  })
 }
 
 const sendGoodbyeEmail = (email, name) => {
