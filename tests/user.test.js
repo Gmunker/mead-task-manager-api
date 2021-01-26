@@ -45,6 +45,7 @@ test('Should login exisiting user', async () => {
     expect(response.body.token).toBe(user.tokens[1].token)
 })
 
+
 test('Should return 400 when wrong creds', async () => {
   await request(app)
     .post('/users/login')
